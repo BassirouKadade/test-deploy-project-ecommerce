@@ -1,0 +1,186 @@
+/* Reset des styles de la page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  color: cadetblue; /* Couleur corrigée */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav > div {
+    height: 100%;
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+  font-size: 57px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li .liens {
+  color: cadetblue;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 10px;
+}
+
+  .liens::before,
+.liens::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cadetblue;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.liens::before {
+  transform-origin: left;
+}
+.liens::after {
+  transform-origin: right;
+}
+
+.afirst::after,.afirst::backdrop{
+  visibility: visible;
+  transform: scaleX(1);
+
+}
+
+.liens:hover::before,
+.liens:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.liens > svg {
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+a:hover > svg {
+  transform: scale(1.2);
+}
+
+/* Styles pour les icônes panier et compte */
+.panier,
+.compte {
+  background-color: rgba(210, 241, 243, 0.288);
+  padding:8px 10px;
+  font-size: 13px;
+
+}
+
+/* Styles pour la section principale */
+.sectionParent {
+  width: 93%;
+  padding: 40px;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  background-image: url('../assets/6343503_1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 55%;
+  margin-right: 60px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sectionDescrip {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.sectionDescrip h2{
+      margin-top: 54px;
+  text-shadow:  1px 5px 0px cadetblue ,2px 4px 1px  cadetblue;
+      transform: rotate3d(100px);
+     font-weight: 700;
+     color: #fff;
+     font-size: 40px;
+     text-align:center;
+     text-transform: uppercase;
+
+}
+
+.sectionDescrip p{
+    font-weight: 500;
+    width: 420px;
+    text-align:center;
+    margin: 10px 0;
+    color: gray;
+}
+
+.sectionDescrip button {
+  background-image: linear-gradient(cadetblue,#776f6f); /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  padding: 10px 20px; /* Rembourrage du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 7px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de souris pointer */
+  transition: background-color 0.3s ease; /* Transition douce */
+}
+
+button:hover {
+  background-color: #0056b3; /* Changement de couleur au survol */
+}
+
+

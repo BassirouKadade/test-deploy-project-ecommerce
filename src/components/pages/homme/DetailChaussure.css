@@ -1,0 +1,70 @@
+/* DetailChaussure.css */
+.detail-section {
+  width: 80%;
+  margin-top: 60px;
+}
+
+.detail-article {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.detail-article img {
+  width: 60%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.detail-panier {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-panier h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.detail-panier h4 {
+  font-size: 18px;
+  color: #555;
+}
+
+.detail-panier div {
+  margin-top: 10px;
+}
+
+.detail-panier label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.detail-panier input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.detail-panier button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.detail-panier button:hover {
+  background-color: #0056b3;
+}
+.confirmation{
+     background-color:rgb(209, 231, 232);
+     padding:50px;
+     border-radius: 10px;
+     position: absolute;
+     top: -10%;
+      right:0;
+}
